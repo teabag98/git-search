@@ -1,20 +1,47 @@
 <app-profile-search></app-profile-search>
 <br><hr><br>
 <div class="row">
-  
-      <div  class="card col-md-4">
-          <div class="card-header">
-          <h3 *ngIf='data'>{{data.login}}</h3>
-          
+  <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" *ngIf='data'  src="{{data.avatar_url}}" alt="Card image cap">
+          <div class="card-body login">
+            <h4 *ngIf='data' class="card-text"> {{data.login}}</h4>
           </div>
-         <div class="card-body">
-          
-      <img *ngIf='data' src="{{data.avatar_url}}" alt="my github profile">
-              </div>
-             
-            </div>
-  
+        </div>
   </div>
+  <div class="col-md-8">
+      <span class="col-md-8">
+          <span>Repositories<span class="badge badge-pill badge-secondary">{{data.public_repos}}</span></span>
+       </span>
+     <span class="col-md-8">
+    <span>Public gists<span class="badge badge-pill badge-secondary">{{data.public_gists}}</span></span>
+   </span>
+ <span class="col-md-8">
+                                          <span>followers<span class="badge badge-pill badge-secondary">{{data.followers}}</span></span>
+                                                      </span>
+                                                      <span class="col-md-8">
+                                               <span>following<span class="badge badge-pill badge-secondary">{{data.following}}</span></span>
+                                          </span>
+                                            <span class="col-md-8">
+                                            <span>Repositories<span class="badge badge-pill badge-secondary">{{data.public_repos}}</span></span>
+                                                                                      </span>
+                                                                                     
+   
+        <span class="col-md-8">
+                                                                                          <span>Repositories<span class="badge badge-pill badge-secondary">{{data.public_repos}}</span></span>
+                                                                                                      </span>
+  </div>
+        
+          
+        
+        
+          
+     
+             
+             
+         
+
+    </div>
       
   
 
