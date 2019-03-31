@@ -21,7 +21,7 @@ apiUrl ='https://api.github.com/users/'+this.userName;
 constructor(private http:HttpClient){}
 
 getResults(){
-  return this.http.get<Gitsearch[]>(this.apiUrl);
+  return this.http.get<Gitsearch>(this.apiUrl);
 }
 
 }

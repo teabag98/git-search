@@ -1,8 +1,13 @@
-<ul>
+<app-profile-search></app-profile-search>
+
   
-  <li *ngIf='data'>
-   {{data.login }}
+  <div *ngIf='data'>
+   {{data.login}}
+   {{data.id}}
+   {{data.avatar_url}}
+   {{data.login}}
+   {{data.login}}
   
-  </li>
-</ul>
+  </div>
+
 <router-outlet></router-outlet>
