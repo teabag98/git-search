@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FreeService } from '../free.service';
 
 @Component({
   selector: 'app-profile-search',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileSearchComponent implements OnInit {
 
-  constructor() { }
-  username:string;
-  search(username:string){
-this.username = username;
-  }
+  constructor(private https: FreeService) { }
+  userName:string;
 
+  updateSearch(){
+this.https.search(this.userName)
+  }
   ngOnInit() {
+
   }
 
 }

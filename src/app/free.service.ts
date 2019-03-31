@@ -27,4 +27,8 @@ getRepos(){
   return this.http.get<Gitsearch>(this.apiUrl + '/repos');
 }
 
+search(userName: string){
+this.userName = userName;
+}
+
 }
