@@ -1,30 +1,22 @@
 <app-profile-search></app-profile-search>
 <br><hr><br>
-<div class="col-md-8 col-md-offset-2">
-    <!-- <div *ngIf='data'>
-       {{data.login}}
-      <p>{{data.id}}</p> 
-        {{data.avatar_url}}
-        
-       
-       </div> -->
-       <div  class="card" style="width: 18rem;">
+<div class="row">
+  
+      <div  class="card col-md-4">
           <div class="card-header">
           <h3 *ngIf='data'>{{data.login}}</h3>
           
           </div>
          <div class="card-body">
-            <div class="row">
-              <div class="col-md-4">
+          
       <img *ngIf='data' src="{{data.avatar_url}}" alt="my github profile">
               </div>
-              <div class="col-md-6">
-
-              </div>
+             
             </div>
-         </div>
-        </div>
-</div>     
+  
+  </div>
+      
+  
 
 
 
