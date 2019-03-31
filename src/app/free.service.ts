@@ -23,5 +23,8 @@ constructor(private http:HttpClient){}
 getResults(){
   return this.http.get<Gitsearch>(this.apiUrl);
 }
+getRepos(){
+  return this.http.get<Gitsearch>(this.apiUrl + '/repos');
+}
 
 }
