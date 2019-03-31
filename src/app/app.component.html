@@ -1,9 +1,8 @@
 <ul>
   
-  <li *ngFor='let user of users'>
-   {{user.login }}
-   {{user.id}}
-   {{user.followers_url}}
+  <li *ngIf='data'>
+   {{data.login }}
+  
   </li>
 </ul>
 <router-outlet></router-outlet>

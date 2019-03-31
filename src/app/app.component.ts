@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FreeService } from './free.service';
 import { Gitsearch } from './gitsearch';
 
@@ -7,7 +7,7 @@ import { Gitsearch } from './gitsearch';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
   users:Gitsearch[]
   constructor(private freeservice:FreeService){
@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   ngOnInit(){
-  this.freeservice.getResults().subscribe(data => {
+  return this.freeservice.getResults().subscribe(data => {
    this.users = data; 
   })
   }

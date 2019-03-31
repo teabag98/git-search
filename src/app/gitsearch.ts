@@ -23,12 +23,12 @@ export class Gitsearch {
     // email: null;
     // hireable: null;
     // bio: null;
-    // public_repos: number;
-    // public_gists: number;
-    // followers: number;
-    // following: number;
-    // created_at: string;
-    // updated_at: string;
+    public_repos: number;
+    public_gists: number;
+    followers: number;
+    following: number;
+    created_at: string;
+    updated_at: string;
  
 
 }
