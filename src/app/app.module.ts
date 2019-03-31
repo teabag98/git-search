@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FreeService } from './free.service';
 import { ProfileSearchComponent } from './profile-search/profile-search.component';
+import {  FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProfileSearchComponent } from './profile-search/profile-search.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [FreeService],
   bootstrap: [AppComponent]

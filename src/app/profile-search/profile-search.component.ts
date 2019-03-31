@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileSearchComponent implements OnInit {
 
   constructor() { }
+  username:string;
+  search(username:string){
+this.username = username;
+  }
 
   ngOnInit() {
   }
