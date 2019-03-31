@@ -1,13 +1,15 @@
 <app-profile-search></app-profile-search>
+<br><br><br><hr><br><br><br>
+<div class="col-md-8 col-md-offset-2">
+    <div *ngIf='data'>
+       {{data.login}}
+      <p>{{data.id}}</p> 
+        {{data.avatar_url}}
+        
+       
+       </div>
+</div>     
 
-  
-  <div *ngIf='data'>
-   {{data.login}}
-   {{data.id}}
-   {{data.avatar_url}}
-   {{data.login}}
-   {{data.login}}
-  
-  </div>
+
 
 <router-outlet></router-outlet>
