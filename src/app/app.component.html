@@ -31,19 +31,22 @@
   <li class="list-group-item"><strong>blog </strong> {{data.blog}}</li>
   <li class="list-group-item"><strong>created at </strong>{{data.created_at}}</li>
  </ul>
-<h1 *ngFor='let repo of repos'>{{repo.name}}</h1>
+
   </div>
         
-          
-        
-        
-          
+   </div>
+   <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-8">
+        <ul *ngFor='let repo of repos'>
+            <li> <a href="{{repo.html_url}}">{{repo.name}} 
+              </a>
+            </li>
+            </ul>
+     </div>
      
-             
-             
-         
-
-    </div>
+        <div class="col-md-2"></div>
+   </div>
       
   
 
