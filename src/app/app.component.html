@@ -1,13 +1,21 @@
 <app-profile-search></app-profile-search>
-<br><br><br><hr><br><br><br>
+<br><hr><br>
 <div class="col-md-8 col-md-offset-2">
-    <div *ngIf='data'>
+    <!-- <div *ngIf='data'>
        {{data.login}}
       <p>{{data.id}}</p> 
         {{data.avatar_url}}
         
        
-       </div>
+       </div> -->
+       <div  class="card" style="width: 18rem;">
+          <div class="card-header">
+          <h3 *ngIf='data'>{{data.login}}</h3>
+          </div>
+         <div class="card-body">
+
+         </div>
+        </div>
 </div>     
 
 
