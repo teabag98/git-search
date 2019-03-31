@@ -5,10 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FreeService } from './free.service';
+import { ProfileSearchComponent } from './profile-search/profile-search.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileSearchComponent
   ],
   imports: [
     BrowserModule,
