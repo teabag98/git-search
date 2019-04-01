@@ -11,9 +11,7 @@ export class ProfileSearchComponent implements OnInit {
   constructor(private https: FreeService) { }
   userName:string;
 
-  updateSearch(){
-this.https.search(this.userName)
-  }
+ 
   ngOnInit() {
 
   }

@@ -12,7 +12,7 @@ import { Gitsearch } from './gitsearch'
 })
 
 export class FreeService {
-  private userName= 'teabag98';
+   private userName= 'teabag98';
   private Client_id = '53477246ba4418ec6df9';
   private client_secrets = '792b79c78fa21fb3f21e0721dc828781a97e52f4';
    
@@ -26,9 +26,4 @@ getResults(){
 getRepos(){
   return this.http.get<Gitsearch>(this.apiUrl + '/repos');
 }
-
-search(userName: string){
-this.userName = userName;
-}
-
 }
