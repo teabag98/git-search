@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  access_token:'3a33350f7428852b2c5ba3e9ffdc997fc7992584'
-};
+  access_token:'3a33350f7428852b2c5ba3e9ffdc997fc7992584' 
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

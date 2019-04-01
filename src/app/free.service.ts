@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Observable } from 'rxjs';
 import { HttpClient} from '@angular/common/http';
 import { Gitsearch } from './gitsearch'
 import { environment } from 'src/environments/environment';

@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import {FreeService } from './free.service';
 import { ProfileSearchComponent } from './profile-search/profile-search.component';
 import {  FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileSearchComponent
+    ProfileSearchComponent,
+    NotFoundComponent
    
   ],
   imports: [

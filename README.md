@@ -11,7 +11,7 @@ One is expected to input preffered github name. click search to display
 | enter user name| user name| display user information and repositories  |
 | press search button| search | initiate search function  |
 |input name| name not found on github| error 404 |
-
+ 
 
 
 
