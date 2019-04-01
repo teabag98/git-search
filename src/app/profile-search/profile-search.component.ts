@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {FreeService } from '../free.service';
 
 @Component({
@@ -8,12 +8,19 @@ import {FreeService } from '../free.service';
 })
 export class ProfileSearchComponent implements OnInit {
 
-  constructor(private https: FreeService) { }
+  @Output() searchUser = new EventEmitter<string>();
   userName:string;
-
+  
+  constructor(private https: FreeService) { }
  
   ngOnInit() {
 
+  }
+
+  search() {
+    console.log(this.userName);
+    
+    this.searchUser.emit(this.userName);
   }
 
 }

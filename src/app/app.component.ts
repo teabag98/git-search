@@ -12,21 +12,35 @@ export class AppComponent implements OnInit {
 
   data:any;
   repos:any;
-  constructor(private freeservice:FreeService){
+  username:string;
+  constructor(private freeservice:FreeService)
+  {
+    this.freeservice.getResults('teabag98').subscribe(data => {
+    
+      this.data= data;
+     });
+   
+     this.freeservice.getRepos('teabag98').subscribe(repos => {
+       
+       this.repos= repos;
+      });
 
+     
+  }
+  search(username){
+    console.log(username);
+    this.freeservice.getResults(username).subscribe(data => {
+    
+      this.data= data;
+     });
+   
+     this.freeservice.getRepos(username).subscribe(repos => {
+       
+       this.repos= repos;
+      })
   }
 
-  ngOnInit(){
- this.freeservice.getResults().subscribe(data => {
-    
-   this.data= data;
-  });
+  ngOnInit(){ }
 
-  this.freeservice.getRepos().subscribe(repos => {
-    
-    this.repos= repos;
-   });
-
-  }
   }
  
